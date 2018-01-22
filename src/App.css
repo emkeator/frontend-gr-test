@@ -1,28 +1,202 @@
-.App {
-  text-align: center;
+/* 
+  RESET CSS FROM:
+  http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: -apple-system,BlinkMacSystemFont,“Segoe UI”,Roboto,Oxygen-Sans,Ubuntu,Cantarell,“Helvetica Neue”,sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-title {
-  font-size: 1.5em;
+
+/* MY CSS - RESET DONE */
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #4198EA;
+  font-weight: bold; 
+  letter-spacing: 0.05em;
+  width: 100vw;
+  border-bottom: 1px solid lightgrey;
+  padding: 10px 20px;
 }
 
-.App-intro {
-  font-size: large;
+.Search {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.Search .searchDiv {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
 }
+
+.searchDiv .typeSelect {
+  width: 200px;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  outline: none;  
+  cursor: pointer;
+  
+}
+
+.searchDiv .stateSelect {
+  width: 70px;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  outline: none;  
+  cursor: pointer;
+  
+}
+
+.searchDiv button {
+  width: 70px;
+  font-size: 1.1rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid lightslategray;
+  cursor: pointer;
+  
+}
+
+.searchDiv button:hover {
+  background-color: #4198EA;
+  cursor: pointer;  
+}
+
+.Reps {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.repsList,
+.RepDetail {
+  width: 50vw;
+}
+
+.repsList {
+  padding-left: 15px;
+}
+
+.repsList h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+.repsList em {
+  color: #4198EA;
+  text-transform: capitalize
+}
+
+.repsList li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 85px 10px 15px;
+  border-bottom: 1px solid lightgrey;
+  cursor: pointer;  
+}
+
+.repsList .headerLi {
+  background-color: #F4F4F5;
+  padding: 25px 70px 25px 15px;
+  border: none;
+  color: lightslategray;
+  cursor: default;
+}
+
+.RepDetail {
+  padding-left: 15px;
+}
+
+.RepDetail h1 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.RepDetail h2, a {
+  color: lightslategray;
+  background-color: #F4F4F5;
+  /* padding: 25px 70px 25px 15px; */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.3rem;
+  /* height: 60px; */
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+}
+
+.RepDetail .link {
+  text-decoration: none;
+  color: darkslategrey;
+}
+
+.RepDetail .link:hover {
+  color: #4198EA;
+  cursor: pointer;
+}
+
+
